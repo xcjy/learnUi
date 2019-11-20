@@ -8,6 +8,11 @@ const ClickHandler:React.MouseEventHandler=(e)=>{
 }
 
 ReactDom.render(<div>
-    <Icon name="wechat" onClick={ClickHandler}/>
+    <Icon name="wechat" onClick={ClickHandler}
+      className="qqq"
+      onMouseLeave={()=>{console.log('leave')}}
+      onMouseEnter={ ()=>{console.log('enter')}
+    } 
+    />
 
 </div>, document.querySelector('#root'));
