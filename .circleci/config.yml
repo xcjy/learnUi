@@ -43,6 +43,7 @@ jobs:
   publish:
     <<: *defaults
     steps:
+      - checkout
       - attach_workspace:
           at: .
       - run: npm publish
